@@ -43,3 +43,7 @@
 .abouts {
   font-size:1.8rem;
 }
+
+Nav {
+  cursor:pointer !important;
+}

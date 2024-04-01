@@ -24,6 +24,7 @@ const Contact = () => {
   };
 
   return (
+    <section id="about" className="section about">
     <div className="container mt-5" style={{ maxWidth: '80%' }}>
       <div className="border border-primary p-4 rounded">
         <h1 className = "text-align">Interest form</h1>
@@ -93,6 +94,7 @@ const Contact = () => {
       </div>
       <br/><br/>
     </div>
+    </section>
   );
 };
 
