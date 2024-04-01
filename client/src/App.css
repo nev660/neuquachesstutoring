@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+.App {
+  height:100%;
+  width:100%;
+}
+.m {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.navbar{
+  z-index:999999;
+  margin-left:3vw;
+}
+
+.carousel-container {
+  height: 100vw; /* Set container height to fill the viewport height */
+}
+
+.carousel-img {
+  width: 100vw; /* Set image width to fill the container */
+  height: 100vh; /* Set image height to fill the container */
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem; /* Adjust font size for responsiveness */
+  font-weight: bold;
+  text-align: center;
+}
+
+.section {
+  padding: 50px 0;
+  text-align: center;
+}
+.abouts {
+  font-size:1.8rem;
+}

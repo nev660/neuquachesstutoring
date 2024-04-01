@@ -1,0 +1,19 @@
+.contact-form-wrapper {
+    width: 80%; /* Take 80% of the width */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  .success-message {
+    background-clor: #d4edda; /* Green color for success message */
+    color: #155724; /* Dark green text color */
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .error-message {
+    background-color: #f8d7da; /* Red color for error message */
+    color: #721c24; /* Dark red text color */
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
