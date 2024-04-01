@@ -63,7 +63,7 @@ function About() {
         </Row>
         <br/>
         <div className="mission-statement">
-          <p className="abouts"><b>We noticed</b> a lack of freshmen on our high school's chess team this year. Was it just us, or was chess interest dwindling? We reached out to the YMCA and started teaching chess to kids there, increasing exposure to the game; The kids loved it, but we felt it wasn't personalized enough for each kid. That's why we made NVChess+, to give the most interested of kids to improve their skills. Lessons are just $10 cash per 30 minute session, but what's more valuable to us is the ability to help others out.</p>
+          <p className="abouts"><b>We noticed</b> a lack of freshmen on our high school's chess team this year. Was it just us, or was chess interest dwindling? We reached out to the YMCA and started teaching chess to kids there, increasing exposure to the game; The kids loved it, but we felt it wasn't personalized enough for each kid. That's why we made NVChess+, to give the most interested of kids the opportunity to improve their skills. Lessons are just $10 cash per 30 minute session, but what's more valuable to us is the ability to help others out.</p>
         </div>
       </Container>
     </section>
