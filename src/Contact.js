@@ -54,7 +54,7 @@ const Contact = () => {
           Success! Your message has been recieved, we will get back to you on the provided email!
         </div>
         <div class="alert alert-info" role="alert">
-          Please fill this out if you are interested! This does not commit you to anything.
+          Please fill this out if you are interested! This does not commit you to anything.<br/>Sessions take place at 95th street library.
         </div>
         <h1 className = "text-align">Interest form</h1>
         <form onSubmit={handleSubmit}>
