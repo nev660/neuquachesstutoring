@@ -11,6 +11,7 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    alert(name + " changed to " + value)
     setFormData({
       ...formData,
       [name]: value
@@ -19,8 +20,20 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+    fetch("/", {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+  })
+  .then(e => {
+    if (e.ok)
+      alert("Success!")
+     else 
+      alert("Something went wrong!")
+  });
   };
 
   return (
