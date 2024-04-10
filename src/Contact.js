@@ -11,7 +11,6 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    alert(name + " changed to " + value)
     setFormData({
       ...formData,
       [name]: value
@@ -20,19 +19,21 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("/", {
+    
+    fetch("https://discord.com/api/webhooks/1227608813490929694/sZvCRYZB9tbIDEJvOMnz9VbqhLPM-EbP5RH7oaT2jgmhQ3yUnOK-ghLYE-Sonv96Jbs8", {
       method: 'POST',
-      body: JSON.stringify(formData),
+      body: JSON.stringify({'content' : JSON.stringify(formData,null,2).replace(/"/g,'')}),
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
-    },
+    }
   })
   .then(e => {
+    document.querySelector(".alert-info").classList.add("d-none");
     if (e.ok)
-      alert("Success!")
+      document.querySelector(".alert-success").classList.remove("d-none");
      else 
-      alert("Something went wrong!")
+      document.querySelector(".alert-danger").classList.remove("d-none");
   });
   };
 
@@ -40,6 +41,15 @@ const Contact = () => {
     <section id="about" className="section contact">
     <div className="container mt-5" style={{ maxWidth: '80%' }}>
       <div className="border border-primary p-4 rounded">
+        <div class="alert alert-danger d-none" role="alert">
+          Something went wrong! Instead, contact us directly at neuquachess@gmail.com.
+        </div>
+        <div class="alert alert-success d-none" role="alert">
+          Success! Your message has been recieved, we will get back to you on the provided email!
+        </div>
+        <div class="alert alert-info" role="alert">
+          Please fill this out if you are interested! This does not commit you to anything.
+        </div>
         <h1 className = "text-align">Interest form</h1>
         <form onSubmit={handleSubmit}>
           <div className="row mb-3">
@@ -79,7 +89,7 @@ const Contact = () => {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Date/Time"
+                placeholder="Availability (dates, times)"
                 name="dateTime"
                 value={formData.dateTime}
                 onChange={handleChange}
@@ -91,7 +101,7 @@ const Contact = () => {
               <textarea
                 className="form-control"
                 rows="3"
-                placeholder="Additional Information"
+                placeholder="Anything else?"
                 name="additionalInfo"
                 value={formData.additionalInfo}
                 onChange={handleChange}

@@ -5,6 +5,7 @@ import About from "./About";
 import CarouselSegment from "./CarouselSegment";
 import Contact from "./Contact";
 import MyNav from './myNav';
+import Footer from './Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Element>
       <Contact/>
       </Element>
+      <Footer/>
       </div>
   );
 }
