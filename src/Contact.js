@@ -18,6 +18,12 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
+    // for (const [name,value] in Object.entries(formData)) {
+    //   if (value === '') {
+    //     document.querySelector(".alert-info").classList.add("d-none");
+    //     document.querySelector(".not-filled").classList.remove("d-none");
+    //   }
+    // }
     e.preventDefault();
     
     fetch("https://discord.com/api/webhooks/1227608813490929694/sZvCRYZB9tbIDEJvOMnz9VbqhLPM-EbP5RH7oaT2jgmhQ3yUnOK-ghLYE-Sonv96Jbs8", {
@@ -61,6 +67,7 @@ const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="col">
@@ -71,6 +78,7 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                required
               />
             </div>
           </div>
@@ -83,6 +91,7 @@ const Contact = () => {
                 name="childName"
                 value={formData.childName}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="col">
@@ -93,6 +102,7 @@ const Contact = () => {
                 name="dateTime"
                 value={formData.dateTime}
                 onChange={handleChange}
+                required
               />
             </div>
           </div>
