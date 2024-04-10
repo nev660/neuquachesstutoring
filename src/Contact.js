@@ -40,6 +40,7 @@ const Contact = () => {
       document.querySelector(".alert-success").classList.remove("d-none");
      else 
       document.querySelector(".alert-danger").classList.remove("d-none");
+    document.querySelectorAll(".form-control").forEach(e => {e.value = ''});
   });
   };
 
