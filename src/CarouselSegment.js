@@ -13,7 +13,7 @@ function CarouselSegment() {
                 src={image}
                 alt={`Slide ${index + 1}`}
               />
-              <div className="carousel-text">Neuqua's chess team. Now offering <br></br>one-on-one lessons</div>
+              <div className="carousel-text">Neuqua'Valley's Varsity Chess Team,<br></br>now offering<br></br>one-on-one lessons</div>
             </div>
           </Carousel.Item>
         ))}
