@@ -19,7 +19,7 @@ function About() {
               <Card.Body>
                 <Card.Title>Vrishank Ramnath</Card.Title>
                 <Card.Text>
-                  When he isn't fiddling his violin, he's playing chess. This junior is a 2-time chess state champion, so watch out!
+                  When he isn't fiddling his violin, Vrishank loves playing chess. This highschool junior is a 2-time chess State Champion and placed 4th in Nationals, so watch out!
                   <br/><br/><br/>
                 </Card.Text>
               </Card.Body>
@@ -31,7 +31,7 @@ function About() {
               <Card.Body>
                 <Card.Title>Rishi Murali</Card.Title>
                 <Card.Text>
-                  He's a sophomore that loves Honkai Star Rail, but above all, he loves chess. He placed 2nd at the Illinois All Grade Championship, so take him seriously!  
+                  He's a sophomore thats great at biology and plays the viola, but above all he's amazing at chess. Rishi placed 2nd at the Illinois All Grade Championship, so take him seriously!  
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -42,7 +42,7 @@ function About() {
               <Card.Body>
                 <Card.Title>Nevin Philip</Card.Title>
                 <Card.Text>
-                  A veteran at the game, Nevin has played chess for 10 years! He's a junior that also enjoys swimming.
+                  A veteran at the game, Nevin has played chess for over 12 years! He's a junior who likes everything science, and enjoys swimming on the weekends.
                   <br/><br/><br/>
                 </Card.Text>
               </Card.Body>
@@ -54,7 +54,7 @@ function About() {
               <Card.Body>
                 <Card.Title>Kundan Baliga</Card.Title>
                 <Card.Text>
-                  Kundan is a sophomore at Neuqua. A wizard at puzzles, he'll treat every position like one, til he brings the win back for his team. 
+                  Kundan's a sophomore at Neuqua, and a wizard at puzzles! He'll treat every position like one, until he brings back the win for his team. 
                   <br/><br/>
                 </Card.Text>
               </Card.Body>
@@ -63,7 +63,7 @@ function About() {
         </Row>
         <br/>
         <div className="mission-statement">
-          <p className="abouts"><b>We noticed</b> a lack of freshmen on our high school's chess team this year. Was it just us, or was chess interest dwindling? We reached out to the YMCA and started teaching chess to kids there, increasing exposure to the game; The kids loved it, but we felt it wasn't personalized enough for each kid. That's why we made NVChess+, to give the most interested of kids the opportunity to improve their skills. Lessons are just $15 cash per 30 minute session - or $30 an hour, but what's more valuable to us is the ability to help others out.</p>
+          <p className="abouts"><b>Our Mission</b><br/><br/>"Our goal at NVChess+ is to empower individuals of all ages and skill levels to develop ther strategic thinking, enhance their problem-solving abilities, and foster a lifelong love for the game of chess. Through personalized lessons, innovative teaching methods, and a supportive learning environment, we aim to cultivate confident, proficient, and enthusiastic chess players who are ready to excel both on and off the board."</p>
         </div>
       </Container>
     </section>
